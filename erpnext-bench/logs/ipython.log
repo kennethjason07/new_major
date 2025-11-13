@@ -1,0 +1,131 @@
+2025-11-02 18:39:35,181 INFO ipython === bench console session ===
+2025-11-02 18:39:35,181 INFO ipython frappe.delete_doc("Module Def", "Education")
+exit()
+2025-11-02 18:39:35,181 INFO ipython frappe.get_all("DocType", filters={"module": "Education"}, pluck="name")clear
+2025-11-02 18:39:35,181 INFO ipython === session end ===
+2025-11-02 18:42:04,035 INFO ipython === bench console session ===
+2025-11-02 18:42:04,035 INFO ipython frappe.get_all("DocType", filters={"module": "Education"}, pluck="name")
+2025-11-02 18:42:04,035 INFO ipython doctypes = frappe.get_all("DocType", filters={"module": "Education"}, pluck="name")
+
+for dt in doctypes:
+    doc = frappe.get_doc("DocType", dt)
+    doc.module = "Vidyasetu"
+    doc.save()
+    print(f"✅ Updated module for {dt}")
+
+frappe.db.commit()
+print("🎯 All doctypes moved from Education → Vidyasetu.")
+2025-11-02 18:42:04,035 INFO ipython frappe.get_doc({
+    "doctype": "Module Def",
+    "module_name": "Vidyasetu",
+    "app_name": "vidyasetu"
+}).insert()
+
+frappe.db.commit()
+print("✅ Created Module Def: Vidyasetu")
+2025-11-02 18:42:04,035 INFO ipython doctypes = frappe.get_all("DocType", filters={"module": "Education"}, pluck="name")
+
+for dt in doctypes:
+    doc = frappe.get_doc("DocType", dt)
+    doc.module = "Vidyasetu"
+    doc.save()
+    print(f"✅ Updated module for {dt}")
+
+frappe.db.commit()
+print("🎯 All doctypes moved from Education → Vidyasetu.")
+2025-11-02 18:42:04,035 INFO ipython frappe.db.get_all("Module Def", pluck="name")
+2025-11-02 18:42:04,035 INFO ipython frappe.db.get_all("Module Def", pluck="name")
+2025-11-02 18:42:04,035 INFO ipython frappe.clear_cache()
+frappe.reload_doc("vidyasetu", "module_def", "vidyasetu")
+2025-11-02 18:42:04,035 INFO ipython doctypes = frappe.get_all("DocType", filters={"module": "Education"}, pluck="name")
+
+for dt in doctypes:
+    try:
+        doc = frappe.get_doc("DocType", dt)
+        doc.module = "Vidyasetu"
+        doc.save()
+        print(f"✅ Updated module for {dt}")
+    except Exception as e:
+        print(f"⚠️ Skipped {dt}: {e}")
+
+frappe.db.commit()
+print("🎯 All possible doctypes moved from Education → Vidyasetu.")
+2025-11-02 18:42:04,035 INFO ipython === session end ===
+2025-11-02 18:44:27,007 INFO ipython === bench console session ===
+2025-11-02 18:44:27,007 INFO ipython frappe.get_module_path("Vidyasetu")
+2025-11-02 18:44:27,008 INFO ipython frappe.reload_doc("vidyasetu", "module_def", "vidyasetu")
+2025-11-02 18:44:27,008 INFO ipython frappe.get_doc({
+    "doctype": "Module Def",
+    "module_name": "Vidyasetu",
+    "app_name": "vidyasetu"
+}).insert(ignore_if_duplicate=True)
+
+frappe.db.commit()
+2025-11-02 18:44:27,008 INFO ipython === session end ===
+2025-11-02 18:45:45,992 INFO ipython === bench console session ===
+2025-11-02 18:45:45,992 INFO ipython frappe.get_module_path("Vidyasetu")
+2025-11-02 18:45:45,992 INFO ipython mv ~/erpnext-bench/apps/vidyasetu/vidyasetu/education/* ~/erpnext-bench/apps/vidyasetu/vidyasetu/vidyasetu/
+rm -rf ~/erpnext-bench/apps/vidyasetu/vidyasetu/education
+2025-11-02 18:45:45,992 INFO ipython close()
+2025-11-02 18:45:45,992 INFO ipython close()
+2025-11-02 18:45:45,992 INFO ipython === session end ===
+2025-11-02 18:48:20,983 INFO ipython === bench console session ===
+2025-11-02 18:48:20,983 INFO ipython frappe.get_module_path("Vidyasetu")
+2025-11-02 18:48:20,983 INFO ipython frappe.get_all("DocType", filters={"module": "Vidyasetu"}, pluck="name")
+2025-11-02 18:48:20,983 INFO ipython nano ~/erpnext-bench/apps/vidyasetu/vidyasetu/config/desktop.py
+2025-11-02 18:48:20,983 INFO ipython === session end ===
+2025-11-02 18:57:00,850 INFO ipython === bench console session ===
+2025-11-02 18:57:00,854 INFO ipython === session end ===
+2025-11-02 18:58:04,364 INFO ipython === bench console session ===
+2025-11-02 18:58:04,364 INFO ipython frappe.delete_doc("Module Def", "vidyasetu")
+exit()
+2025-11-02 18:58:04,364 INFO ipython sudo systemctl start redis-server
+2025-11-02 18:58:04,365 INFO ipython === session end ===
+2025-11-02 18:58:52,024 INFO ipython === bench console session ===
+2025-11-02 18:58:52,024 INFO ipython doc = frappe.get_doc("Module Def", "vidyasetu")
+doc.delete(ignore_permissions=True)
+frappe.db.commit()
+exit()
+2025-11-02 18:58:52,024 INFO ipython === session end ===
+2025-11-02 18:59:38,257 INFO ipython === bench console session ===
+2025-11-02 18:59:38,258 INFO ipython doc = frappe.get_doc("Module Def", "vidyasetu")
+doc.delete(ignore_permissions=True)
+frappe.db.commit()
+exit()
+2025-11-02 18:59:38,258 INFO ipython === session end ===
+2025-11-02 18:59:56,173 INFO ipython === bench console session ===
+2025-11-02 18:59:56,173 INFO ipython doc = frappe.get_doc("Module Def", "vidyasetu")
+doc.delete(ignore_permissions=True)
+frappe.db.commit()
+exit()
+2025-11-02 18:59:56,173 INFO ipython === session end ===
+2025-11-02 19:01:12,732 INFO ipython === bench console session ===
+2025-11-02 19:01:12,732 INFO ipython doc = frappe.get_doc("Module Def", "vidyasetu")
+doc.delete(ignore_permissions=True)
+frappe.db.commit()
+exit()
+2025-11-02 19:01:12,732 INFO ipython === session end ===
+2025-11-02 19:06:04,547 INFO ipython === bench console session ===
+2025-11-02 19:06:04,548 INFO ipython import frappe
+
+# Check if the 'education' app is still listed in installed apps
+frappe.get_installed_apps()
+2025-11-02 19:06:04,548 INFO ipython === session end ===
+2025-11-02 19:09:14,495 INFO ipython === bench console session ===
+2025-11-02 19:09:14,495 INFO ipython import frappe
+
+# Check installed apps in the site metadata
+frappe.get_installed_apps()
+2025-11-02 19:09:14,495 INFO ipython === session end ===
+2025-11-02 19:11:10,026 INFO ipython === bench console session ===
+2025-11-02 19:11:10,026 INFO ipython import frappe
+frappe.get_installed_apps()
+2025-11-02 19:11:10,026 INFO ipython === session end ===
+2025-11-02 19:12:16,416 INFO ipython === bench console session ===
+2025-11-02 19:12:16,416 INFO ipython import frappe
+frappe.get_installed_apps()
+2025-11-02 19:12:16,416 INFO ipython === session end ===
+2025-11-02 19:47:46,683 INFO ipython === bench console session ===
+2025-11-02 19:47:46,685 INFO ipython import frappe
+frappe.get_installed_apps()
+2025-11-02 19:47:46,685 INFO ipython === session end ===

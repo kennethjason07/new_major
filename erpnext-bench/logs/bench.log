@@ -1,0 +1,308 @@
+2025-11-02 18:02:16,995 DEBUG cd erpnext-bench && python3 -m venv env
+2025-11-02 18:02:18,737 DEBUG cd erpnext-bench && /home/kenneth/erpnext-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-11-02 18:02:20,284 DEBUG cd erpnext-bench && /home/kenneth/erpnext-bench/env/bin/python -m pip install --quiet wheel
+2025-11-02 18:02:25,162 LOG Getting frappe
+2025-11-02 18:02:25,162 DEBUG cd erpnext-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream
+2025-11-02 18:02:33,939 LOG Installing frappe
+2025-11-02 18:02:33,939 DEBUG cd /home/kenneth/erpnext-bench && /home/kenneth/erpnext-bench/env/bin/python -m pip install --quiet --upgrade -e /home/kenneth/erpnext-bench/apps/frappe 
+2025-11-02 18:03:57,780 DEBUG cd /home/kenneth/erpnext-bench/apps/frappe && yarn install --check-files
+2025-11-02 18:04:31,687 DEBUG cd erpnext-bench && bench build
+2025-11-02 18:04:31,757 INFO /usr/local/bin/bench build
+2025-11-02 18:04:40,059 LOG setting up backups
+2025-11-02 18:04:40,075 LOG backups were set up
+2025-11-02 18:04:40,075 INFO Bench erpnext-bench initialized
+2025-11-02 18:05:21,960 INFO /usr/local/bin/bench new-site school.localhost
+2025-11-02 18:06:08,201 INFO /usr/local/bin/bench get-app erpnext --branch version-15
+2025-11-02 18:06:08,807 LOG Getting erpnext
+2025-11-02 18:06:08,807 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-15 --depth 1 --origin upstream
+2025-11-02 18:06:15,354 LOG Installing erpnext
+2025-11-02 18:06:15,354 DEBUG cd /home/kenneth/erpnext-bench && /home/kenneth/erpnext-bench/env/bin/python -m pip install --quiet --upgrade -e /home/kenneth/erpnext-bench/apps/erpnext 
+2025-11-02 18:06:33,305 DEBUG cd /home/kenneth/erpnext-bench/apps/erpnext && yarn install --check-files
+2025-11-02 18:06:33,771 DEBUG bench build --app erpnext
+2025-11-02 18:06:33,833 INFO /usr/local/bin/bench build --app erpnext
+2025-11-02 18:06:35,569 INFO /usr/local/bin/bench --site school.localhost install-app erpnext
+2025-11-02 18:07:15,242 INFO /usr/local/bin/bench start
+2025-11-02 18:07:15,364 INFO /usr/local/bin/bench schedule
+2025-11-02 18:07:15,365 INFO /usr/local/bin/bench worker
+2025-11-02 18:07:15,369 INFO /usr/local/bin/bench serve --port 8000
+2025-11-02 18:07:15,372 INFO /usr/local/bin/bench watch
+2025-11-02 18:08:26,184 INFO /usr/local/bin/bench use school.localhost
+2025-11-02 18:08:29,722 INFO /usr/local/bin/bench restart
+2025-11-02 18:08:30,310 INFO /usr/local/bin/bench start
+2025-11-02 18:08:30,422 INFO /usr/local/bin/bench schedule
+2025-11-02 18:08:30,424 INFO /usr/local/bin/bench serve --port 8000
+2025-11-02 18:08:30,425 INFO /usr/local/bin/bench worker
+2025-11-02 18:08:30,426 INFO /usr/local/bin/bench watch
+2025-11-02 18:14:37,775 INFO /usr/local/bin/bench get-app education --branch version-15
+2025-11-02 18:14:38,322 LOG Getting education
+2025-11-02 18:14:38,322 DEBUG cd ./apps && git clone https://github.com/frappe/education.git --branch version-15 --depth 1 --origin upstream
+2025-11-02 18:14:39,468 LOG Installing education
+2025-11-02 18:14:39,468 DEBUG cd /home/kenneth/erpnext-bench && /home/kenneth/erpnext-bench/env/bin/python -m pip install --quiet --upgrade -e /home/kenneth/erpnext-bench/apps/education 
+2025-11-02 18:14:41,599 DEBUG bench build --app education
+2025-11-02 18:14:41,660 INFO /usr/local/bin/bench build --app education
+2025-11-02 18:14:44,663 INFO /usr/local/bin/bench --site school.localhost install-app education
+2025-11-02 18:14:55,994 INFO /usr/local/bin/bench restart
+2025-11-02 18:14:56,482 INFO /usr/local/bin/bench start
+2025-11-02 18:14:56,592 INFO /usr/local/bin/bench schedule
+2025-11-02 18:14:56,592 INFO /usr/local/bin/bench serve --port 8000
+2025-11-02 18:14:56,593 INFO /usr/local/bin/bench worker
+2025-11-02 18:14:56,600 INFO /usr/local/bin/bench watch
+2025-11-02 18:16:36,161 INFO /usr/local/bin/bench list-apps
+2025-11-02 18:16:44,946 INFO /usr/local/bin/bench --site school.localhost clear-cache
+2025-11-02 18:16:45,668 INFO /usr/local/bin/bench --site school.localhost clear-website-cache
+2025-11-02 18:16:46,247 INFO /usr/local/bin/bench build
+2025-11-02 18:16:56,669 INFO /usr/local/bin/bench restart
+2025-11-02 18:16:57,343 INFO /usr/local/bin/bench start
+2025-11-02 18:16:57,461 INFO /usr/local/bin/bench serve --port 8000
+2025-11-02 18:16:57,464 INFO /usr/local/bin/bench worker
+2025-11-02 18:16:57,472 INFO /usr/local/bin/bench watch
+2025-11-02 18:16:57,473 INFO /usr/local/bin/bench schedule
+2025-11-02 18:18:29,001 INFO /usr/local/bin/bench --site sitename list-apps
+2025-11-02 18:19:37,241 INFO /usr/local/bin/bench --site school.localhost list-apps
+2025-11-02 18:20:01,216 INFO /usr/local/bin/bench start
+2025-11-02 18:20:01,336 INFO /usr/local/bin/bench serve --port 8000
+2025-11-02 18:20:01,336 INFO /usr/local/bin/bench schedule
+2025-11-02 18:20:01,346 INFO /usr/local/bin/bench watch
+2025-11-02 18:20:01,348 INFO /usr/local/bin/bench worker
+2025-11-02 18:32:47,060 INFO /usr/local/bin/bench setup requirements
+2025-11-02 18:32:47,064 DEBUG /home/kenneth/erpnext-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-11-02 18:32:47,924 LOG Installing frappe
+2025-11-02 18:32:47,925 DEBUG cd /home/kenneth/erpnext-bench && /home/kenneth/erpnext-bench/env/bin/python -m pip install --quiet --upgrade -e /home/kenneth/erpnext-bench/apps/frappe 
+2025-11-02 18:32:50,671 DEBUG cd /home/kenneth/erpnext-bench/apps/frappe && yarn install --check-files
+2025-11-02 18:32:52,728 LOG Installing erpnext
+2025-11-02 18:32:52,728 DEBUG cd /home/kenneth/erpnext-bench && /home/kenneth/erpnext-bench/env/bin/python -m pip install --quiet --upgrade -e /home/kenneth/erpnext-bench/apps/erpnext 
+2025-11-02 18:32:56,708 DEBUG cd /home/kenneth/erpnext-bench/apps/erpnext && yarn install --check-files
+2025-11-02 18:32:56,854 LOG Installing vidyasetu
+2025-11-02 18:32:56,854 DEBUG cd /home/kenneth/erpnext-bench && /home/kenneth/erpnext-bench/env/bin/python -m pip install --quiet --upgrade -e /home/kenneth/erpnext-bench/apps/vidyasetu 
+2025-11-02 18:32:58,257 WARNING cd /home/kenneth/erpnext-bench && /home/kenneth/erpnext-bench/env/bin/python -m pip install --quiet --upgrade -e /home/kenneth/erpnext-bench/apps/vidyasetu  executed with exit code 1
+2025-11-02 18:32:58,257 WARNING /usr/local/bin/bench setup requirements executed with exit code 167
+2025-11-02 18:32:58,631 INFO /usr/local/bin/bench build
+2025-11-02 18:32:59,128 INFO /usr/local/bin/bench restart
+2025-11-02 18:36:31,145 INFO /usr/local/bin/bench setup requirements
+2025-11-02 18:36:31,151 DEBUG /home/kenneth/erpnext-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-11-02 18:36:32,123 LOG Installing frappe
+2025-11-02 18:36:32,124 DEBUG cd /home/kenneth/erpnext-bench && /home/kenneth/erpnext-bench/env/bin/python -m pip install --quiet --upgrade -e /home/kenneth/erpnext-bench/apps/frappe 
+2025-11-02 18:36:34,055 DEBUG cd /home/kenneth/erpnext-bench/apps/frappe && yarn install --check-files
+2025-11-02 18:36:35,603 LOG Installing erpnext
+2025-11-02 18:36:35,604 DEBUG cd /home/kenneth/erpnext-bench && /home/kenneth/erpnext-bench/env/bin/python -m pip install --quiet --upgrade -e /home/kenneth/erpnext-bench/apps/erpnext 
+2025-11-02 18:36:36,923 DEBUG cd /home/kenneth/erpnext-bench/apps/erpnext && yarn install --check-files
+2025-11-02 18:36:37,064 LOG Installing vidyasetu
+2025-11-02 18:36:37,064 DEBUG cd /home/kenneth/erpnext-bench && /home/kenneth/erpnext-bench/env/bin/python -m pip install --quiet --upgrade -e /home/kenneth/erpnext-bench/apps/vidyasetu 
+2025-11-02 18:36:39,391 INFO /usr/local/bin/bench build
+2025-11-02 18:36:48,525 INFO /usr/local/bin/bench restart
+2025-11-02 18:36:48,953 INFO /usr/local/bin/bench --site school.localhost install-app vidyasetu
+2025-11-02 18:38:56,012 INFO /usr/local/bin/bench --site school.localhost console
+2025-11-02 18:39:50,602 INFO /usr/local/bin/bench --site school.localhost console
+2025-11-02 18:44:04,146 INFO /usr/local/bin/bench console
+2025-11-02 18:44:31,496 INFO /usr/local/bin/bench --site school.localhost clear-cache
+2025-11-02 18:44:32,089 INFO /usr/local/bin/bench --site school.localhost clear-website-cache
+2025-11-02 18:44:54,498 INFO /usr/local/bin/bench --site school.localhost console
+2025-11-02 18:47:07,545 INFO /usr/local/bin/bench --site school.localhost clear-cache
+2025-11-02 18:47:33,854 INFO /usr/local/bin/bench build
+2025-11-02 18:47:43,312 INFO /usr/local/bin/bench --site school.localhost migrate
+2025-11-02 18:47:43,854 INFO /usr/local/bin/bench --site school.localhost clear-cache
+2025-11-02 18:47:44,927 INFO /usr/local/bin/bench restart
+2025-11-02 18:47:52,632 INFO /usr/local/bin/bench --site school.localhost console
+2025-11-02 18:48:43,415 INFO /usr/local/bin/bench --site school.localhost clear-cache
+2025-11-02 18:48:44,116 INFO /usr/local/bin/bench restart
+2025-11-02 18:49:30,306 INFO /usr/local/bin/bench start
+2025-11-02 18:49:30,451 INFO /usr/local/bin/bench schedule
+2025-11-02 18:49:30,451 INFO /usr/local/bin/bench watch
+2025-11-02 18:49:30,451 INFO /usr/local/bin/bench serve --port 8000
+2025-11-02 18:49:30,452 INFO /usr/local/bin/bench worker
+2025-11-02 18:53:34,030 INFO /usr/local/bin/bench clear-cache
+2025-11-02 18:53:35,724 INFO /usr/local/bin/bench clear-website-cache
+2025-11-02 18:53:36,414 INFO /usr/local/bin/bench --site your-site-name clear-cache
+2025-11-02 18:53:36,711 INFO /usr/local/bin/bench build
+2025-11-02 18:54:18,613 INFO /usr/local/bin/bench clear-cache
+2025-11-02 18:54:19,316 INFO /usr/local/bin/bench clear-website-cache
+2025-11-02 18:54:19,946 INFO /usr/local/bin/bench --site school.localhost clear-cache
+2025-11-02 18:54:23,927 INFO /usr/local/bin/bench build --force
+2025-11-02 18:54:37,677 INFO /usr/local/bin/bench restart
+2025-11-02 18:54:41,117 INFO /usr/local/bin/bench start
+2025-11-02 18:54:41,256 INFO /usr/local/bin/bench schedule
+2025-11-02 18:54:41,259 INFO /usr/local/bin/bench serve --port 8000
+2025-11-02 18:54:41,261 INFO /usr/local/bin/bench worker
+2025-11-02 18:54:41,263 INFO /usr/local/bin/bench watch
+2025-11-02 18:55:15,366 INFO /usr/local/bin/bench --site school.localhost list-apps
+2025-11-02 18:55:28,804 INFO /usr/local/bin/bench --site school.localhost uninstall-app education
+2025-11-02 18:56:19,779 INFO /usr/local/bin/bench --site school.localhost console
+2025-11-02 18:57:02,967 INFO /usr/local/bin/bench --site school.localhost install-app vidyasetu
+2025-11-02 18:57:21,376 INFO /usr/local/bin/bench --site school.localhost console
+2025-11-02 18:58:28,826 INFO /usr/local/bin/bench --site school.localhost console
+2025-11-02 18:59:06,568 INFO /usr/local/bin/bench --site school.localhost console
+2025-11-02 18:59:48,802 INFO /usr/local/bin/bench --site school.localhost console
+2025-11-02 19:00:02,992 INFO /usr/local/bin/bench --site school.localhost install-app vidyasetu
+2025-11-02 19:00:46,309 INFO /usr/local/bin/bench --site school.localhost install-app vidyasetu
+2025-11-02 19:01:06,842 INFO /usr/local/bin/bench --site school.localhost console
+2025-11-02 19:01:16,139 INFO /usr/local/bin/bench --site school.localhost install-app vidyasetu
+2025-11-02 19:01:26,885 INFO /usr/local/bin/bench --site school.localhost list-apps
+2025-11-02 19:01:44,528 INFO /usr/local/bin/bench clear-cache
+2025-11-02 19:01:45,278 INFO /usr/local/bin/bench clear-website-cache
+2025-11-02 19:01:45,913 INFO /usr/local/bin/bench build
+2025-11-02 19:01:56,507 INFO /usr/local/bin/bench restart
+2025-11-02 19:02:00,073 INFO /usr/local/bin/bench start
+2025-11-02 19:02:09,892 INFO /usr/local/bin/bench start
+2025-11-02 19:02:17,478 INFO /usr/local/bin/bench start
+2025-11-02 19:02:58,206 INFO /usr/local/bin/bench start
+2025-11-02 19:03:03,302 INFO /usr/local/bin/bench setup redis
+2025-11-02 19:03:03,798 INFO /usr/local/bin/bench setup procfile
+2025-11-02 19:03:05,737 INFO /usr/local/bin/bench restart
+2025-11-02 19:03:06,432 INFO /usr/local/bin/bench start
+2025-11-02 19:03:44,729 INFO /usr/local/bin/bench restart
+2025-11-02 19:03:48,230 INFO /usr/local/bin/bench start
+2025-11-02 19:03:48,345 INFO /usr/local/bin/bench watch
+2025-11-02 19:03:48,346 INFO /usr/local/bin/bench serve --port 8000
+2025-11-02 19:03:48,348 INFO /usr/local/bin/bench schedule
+2025-11-02 19:03:48,359 INFO /usr/local/bin/bench worker
+2025-11-02 19:05:33,675 INFO /usr/local/bin/bench --site school.localhost console
+2025-11-02 19:08:31,797 INFO /usr/local/bin/bench remove-app vidyasetu
+2025-11-02 19:08:31,879 INFO /usr/local/bin/bench --site all list-apps --format json
+2025-11-02 19:08:32,276 WARNING /usr/local/bin/bench remove-app vidyasetu executed with exit code 1
+2025-11-02 19:08:32,702 INFO /usr/local/bin/bench install-app vidyasetu
+2025-11-02 19:08:54,063 INFO /usr/local/bin/bench --site school.localhost console
+2025-11-02 19:09:28,423 INFO /usr/local/bin/bench --site school.localhost mariadb
+2025-11-02 19:10:48,598 INFO /usr/local/bin/bench build
+2025-11-02 19:10:58,221 INFO /usr/local/bin/bench restart
+2025-11-02 19:11:02,435 INFO /usr/local/bin/bench --site school.localhost console
+2025-11-02 19:11:28,396 INFO /usr/local/bin/bench build
+2025-11-02 19:11:39,962 INFO /usr/local/bin/bench restrat
+2025-11-02 19:11:45,718 INFO /usr/local/bin/bench restart
+2025-11-02 19:11:51,325 INFO /usr/local/bin/bench --site school.localhost install-app vidyasetu
+2025-11-02 19:12:00,838 INFO /usr/local/bin/bench --site school.localhost migrate
+2025-11-02 19:12:07,794 INFO /usr/local/bin/bench --site school.localhost console
+2025-11-02 19:12:20,385 INFO /usr/local/bin/bench start
+2025-11-02 19:12:20,510 INFO /usr/local/bin/bench serve --port 8000
+2025-11-02 19:12:20,513 INFO /usr/local/bin/bench watch
+2025-11-02 19:12:20,513 INFO /usr/local/bin/bench worker
+2025-11-02 19:12:20,513 INFO /usr/local/bin/bench schedule
+2025-11-02 19:13:56,611 INFO /usr/local/bin/bench clear-cache
+2025-11-02 19:13:58,605 INFO /usr/local/bin/bench clear-website-cache
+2025-11-02 19:13:59,321 INFO /usr/local/bin/bench build
+2025-11-02 19:14:15,144 INFO /usr/local/bin/bench --site your_site_name migrate
+2025-11-02 19:14:15,786 INFO /usr/local/bin/bench restart
+2025-11-02 19:14:35,007 INFO /usr/local/bin/bench --site school.localhost migrate
+2025-11-02 19:14:35,402 INFO /usr/local/bin/bench restart
+2025-11-02 19:14:43,826 INFO /usr/local/bin/bench start
+2025-11-02 19:14:43,951 INFO /usr/local/bin/bench schedule
+2025-11-02 19:14:43,956 INFO /usr/local/bin/bench worker
+2025-11-02 19:14:43,957 INFO /usr/local/bin/bench watch
+2025-11-02 19:14:43,957 INFO /usr/local/bin/bench serve --port 8000
+2025-11-02 19:15:42,765 INFO /usr/local/bin/bench version
+2025-11-02 19:16:25,690 INFO /usr/local/bin/bench --site school.localhost clear-cache
+2025-11-02 19:16:26,814 INFO /usr/local/bin/bench --site school.localhost clear-website-cache
+2025-11-02 19:16:27,533 INFO /usr/local/bin/bench --site school.localhost migrate
+2025-11-02 19:16:28,012 INFO /usr/local/bin/bench restart
+2025-11-02 19:17:05,889 INFO /usr/local/bin/bench build
+2025-11-02 19:17:15,781 INFO /usr/local/bin/bench --site school.localhost migrate
+2025-11-02 19:17:16,200 INFO /usr/local/bin/bench restart
+2025-11-02 19:17:33,308 INFO /usr/local/bin/bench start
+2025-11-02 19:17:33,435 INFO /usr/local/bin/bench schedule
+2025-11-02 19:17:33,435 INFO /usr/local/bin/bench watch
+2025-11-02 19:17:33,438 INFO /usr/local/bin/bench serve --port 8000
+2025-11-02 19:17:33,440 INFO /usr/local/bin/bench worker
+2025-11-02 19:18:29,039 INFO /usr/local/bin/bench clear-cache
+2025-11-02 19:18:29,906 INFO /usr/local/bin/bench clear-website-cache
+2025-11-02 19:18:30,742 INFO /usr/local/bin/bench --site school.localhost clear-cache
+2025-11-02 19:18:31,684 INFO /usr/local/bin/bench --site school.localhost clear-website-cache
+2025-11-02 19:18:32,430 INFO /usr/local/bin/bench build
+2025-11-02 19:18:41,521 INFO /usr/local/bin/bench restart
+2025-11-02 19:18:48,249 INFO /usr/local/bin/bench --site school.localhost migrate
+2025-11-02 19:19:27,770 INFO /usr/local/bin/bench clear-cache
+2025-11-02 19:19:28,803 INFO /usr/local/bin/bench clear-website-cache
+2025-11-02 19:19:29,485 INFO /usr/local/bin/bench build
+2025-11-02 19:19:37,804 INFO /usr/local/bin/bench restart
+2025-11-02 19:19:45,717 INFO /usr/local/bin/bench --site school.localhost migrate
+2025-11-02 19:19:53,838 INFO /usr/local/bin/bench start
+2025-11-02 19:19:53,978 INFO /usr/local/bin/bench serve --port 8000
+2025-11-02 19:19:53,979 INFO /usr/local/bin/bench watch
+2025-11-02 19:19:53,986 INFO /usr/local/bin/bench schedule
+2025-11-02 19:19:53,989 INFO /usr/local/bin/bench worker
+2025-11-02 19:21:40,779 INFO /usr/local/bin/bench clear-cache
+2025-11-02 19:21:41,812 INFO /usr/local/bin/bench clear-website-cache
+2025-11-02 19:21:42,569 INFO /usr/local/bin/bench build --force
+2025-11-02 19:21:51,054 INFO /usr/local/bin/bench restart
+2025-11-02 19:22:56,052 INFO /usr/local/bin/bench clear-cache
+2025-11-02 19:22:56,736 INFO /usr/local/bin/bench clear-website-cache
+2025-11-02 19:22:57,594 INFO /usr/local/bin/bench build --force
+2025-11-02 19:23:07,925 INFO /usr/local/bin/bench restart
+2025-11-02 19:23:08,916 INFO /usr/local/bin/bench start
+2025-11-02 19:23:09,049 INFO /usr/local/bin/bench schedule
+2025-11-02 19:23:09,051 INFO /usr/local/bin/bench serve --port 8000
+2025-11-02 19:23:09,054 INFO /usr/local/bin/bench worker
+2025-11-02 19:23:09,054 INFO /usr/local/bin/bench watch
+2025-11-02 19:31:31,090 INFO /usr/local/bin/bench get-app education
+2025-11-02 19:31:31,738 LOG Getting education
+2025-11-02 19:31:31,738 DEBUG cd ./apps && git clone https://github.com/frappe/education.git  --depth 1 --origin upstream
+2025-11-02 19:31:36,634 LOG Installing education
+2025-11-02 19:31:36,634 DEBUG cd /home/kenneth/erpnext-bench && /home/kenneth/erpnext-bench/env/bin/python -m pip install --quiet --upgrade -e /home/kenneth/erpnext-bench/apps/education 
+2025-11-02 19:31:40,002 DEBUG cd /home/kenneth/erpnext-bench/apps/education && yarn install --check-files
+2025-11-02 19:31:55,719 DEBUG bench build --app education
+2025-11-02 19:31:55,782 INFO /usr/local/bin/bench build --app education
+2025-11-02 19:32:02,270 INFO /usr/local/bin/bench --site your-site-name install-app education
+2025-11-02 19:32:02,583 INFO /usr/local/bin/bench restart
+2025-11-02 19:32:20,631 INFO /usr/local/bin/bench --site your-site-name list-apps
+2025-11-02 19:32:49,016 INFO /usr/local/bin/bench --site school.localhost list-apps
+2025-11-02 19:33:08,268 INFO /usr/local/bin/bench --site school.localhost migrate
+2025-11-02 19:33:12,154 INFO /usr/local/bin/bench clear-cache
+2025-11-02 19:33:12,943 INFO /usr/local/bin/bench build
+2025-11-02 19:33:29,949 INFO /usr/local/bin/bench restart
+2025-11-02 19:33:35,769 INFO /usr/local/bin/bench start
+2025-11-02 19:33:35,915 INFO /usr/local/bin/bench serve --port 8000
+2025-11-02 19:33:35,922 INFO /usr/local/bin/bench watch
+2025-11-02 19:33:35,926 INFO /usr/local/bin/bench schedule
+2025-11-02 19:33:35,931 INFO /usr/local/bin/bench worker
+2025-11-02 19:35:47,861 INFO /usr/local/bin/bench start
+2025-11-02 19:35:48,007 INFO /usr/local/bin/bench watch
+2025-11-02 19:35:48,009 INFO /usr/local/bin/bench schedule
+2025-11-02 19:35:48,010 INFO /usr/local/bin/bench worker
+2025-11-02 19:35:48,016 INFO /usr/local/bin/bench serve --port 8000
+2025-11-02 19:39:18,195 INFO /usr/local/bin/bench build
+2025-11-02 19:39:33,215 INFO /usr/local/bin/bench --site school.localhost migrate
+2025-11-02 19:39:33,824 INFO /usr/local/bin/bench --site school.localhost clear-cache
+2025-11-02 19:39:34,886 INFO /usr/local/bin/bench restart
+2025-11-02 19:39:43,669 INFO /usr/local/bin/bench start
+2025-11-02 19:39:46,318 INFO /usr/local/bin/bench serve --port 8000
+2025-11-02 19:39:46,323 INFO /usr/local/bin/bench watch
+2025-11-02 19:39:46,326 INFO /usr/local/bin/bench worker
+2025-11-02 19:39:46,327 INFO /usr/local/bin/bench schedule
+2025-11-02 19:41:51,838 INFO /usr/local/bin/bench --site school.localhost clear-cache
+2025-11-02 19:41:52,756 INFO /usr/local/bin/bench --site school.localhost clear-website-cache
+2025-11-02 19:41:53,460 INFO /usr/local/bin/bench --site school.localhost migrate
+2025-11-02 19:41:53,925 INFO /usr/local/bin/bench restart
+2025-11-02 19:42:12,310 INFO /usr/local/bin/bench --site school.localhost mariadb
+2025-11-02 19:46:40,705 INFO /usr/local/bin/bench --site school.localhost clear-cache
+2025-11-02 19:46:41,397 INFO /usr/local/bin/bench --site school.localhost clear-website-cache
+2025-11-02 19:46:42,085 INFO /usr/local/bin/bench build --force
+2025-11-02 19:46:57,866 INFO /usr/local/bin/bench restart
+2025-11-02 19:47:03,005 INFO /usr/local/bin/bench --site school.localhost migrate
+2025-11-02 19:47:07,727 INFO /usr/local/bin/bench --site school.localhost console
+2025-11-02 19:48:10,986 INFO /usr/local/bin/bench --site school.localhost new-doctype Student Profile --module Vidyasetu --custom=0 --autoname=field:student_name
+2025-11-02 19:48:18,852 INFO /usr/local/bin/bench --site school.localhost migrate
+2025-11-02 19:48:23,997 INFO /usr/local/bin/bench start
+2025-11-02 19:48:24,126 INFO /usr/local/bin/bench serve --port 8000
+2025-11-02 19:48:24,127 INFO /usr/local/bin/bench watch
+2025-11-02 19:48:24,127 INFO /usr/local/bin/bench schedule
+2025-11-02 19:48:24,129 INFO /usr/local/bin/bench worker
+2025-11-02 19:49:19,725 INFO /usr/local/bin/bench --site school.localhost uninstall-app education
+2025-11-02 19:49:26,776 INFO /usr/local/bin/bench start
+2025-11-02 19:49:26,891 INFO /usr/local/bin/bench watch
+2025-11-02 19:49:26,891 INFO /usr/local/bin/bench serve --port 8000
+2025-11-02 19:49:26,893 INFO /usr/local/bin/bench schedule
+2025-11-02 19:49:26,894 INFO /usr/local/bin/bench worker
+2025-11-03 16:54:58,004 INFO /usr/local/bin/bench start
+2025-11-03 16:54:58,150 INFO /usr/local/bin/bench serve --port 8000
+2025-11-03 16:54:58,152 INFO /usr/local/bin/bench schedule
+2025-11-03 16:54:58,157 INFO /usr/local/bin/bench watch
+2025-11-03 16:54:58,159 INFO /usr/local/bin/bench worker
+2025-11-03 16:55:40,287 INFO /usr/local/bin/bench start
+2025-11-03 16:55:40,403 INFO /usr/local/bin/bench schedule
+2025-11-03 16:55:40,404 INFO /usr/local/bin/bench serve --port 8000
+2025-11-03 16:55:40,411 INFO /usr/local/bin/bench worker
+2025-11-03 16:55:40,411 INFO /usr/local/bin/bench watch
+2025-11-03 18:00:07,101 INFO /usr/local/bin/bench --verbose --site all backup
+2025-11-13 15:27:53,258 INFO /usr/local/bin/bench start
+2025-11-13 15:27:53,398 INFO /usr/local/bin/bench serve --port 8000
+2025-11-13 15:27:53,398 INFO /usr/local/bin/bench schedule
+2025-11-13 15:27:53,399 INFO /usr/local/bin/bench watch
+2025-11-13 15:27:53,404 INFO /usr/local/bin/bench worker
